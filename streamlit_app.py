@@ -33,24 +33,24 @@ def main():
     """
     st.markdown(html_temp,unsafe_allow_html=True)
     year = st.text_input("year","Type Here")
-    Present_Price = st.text_input("Present_Price(in lacs)","Type Here")
+    #Present_Price = st.text_input("Present_Price(in lacs)","Type Here")
     Kms_Driven = st.text_input("Kms_Driven","Type Here")
     Fuel_Type = st.selectbox("Fuel_Type",("Petrol","Diesel"))
     if Fuel_Type=="Petrol":
         Fuel_Type=0
     else:
         Fuel_Type=1
-    Seller_Type = st.selectbox("Seller_Type",("Dealer","Individual"))
-    if Seller_Type=="Dealer":
-        Seller_Type=0
-    else:
-        Seller_Type=1
-    Transmission = st.selectbox("Transmission",("Manual","Automatic"))
-    if Transmission=="Manual":
-        Transmission=0
-    else:
-        Transmission=1
-    Owner = st.text_input("Owner","Type Here")
+    #Seller_Type = st.selectbox("Seller_Type",("Dealer","Individual"))
+    #if Seller_Type=="Dealer":
+        #Seller_Type=0
+    #else:
+        #Seller_Type=1
+    #Transmission = st.selectbox("Transmission",("Manual","Automatic"))
+    #if Transmission=="Manual":
+        #Transmission=0
+    #else:
+        #Transmission=1
+    #Owner = st.text_input("Owner","Type Here")
 
 
     result=0
