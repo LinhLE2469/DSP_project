@@ -28,11 +28,11 @@ def main():
     st.info(__doc__)
     st.markdown(STYLE, unsafe_allow_html=True)
  
-    file = st.file_uploader("Upload file", type=["csv", "png", "jpg"])
+    file = st.file_uploader("Upload file", type=["csv"])
     show_file = st.empty()
  
     if not file:
-        show_file.info("Please upload a file of type: " + ", ".join(["csv", "png", "jpg"]))
+        show_file.info("Please upload a file of type: " + ", ".join(["csv"]))
         return
  
     content = file.getvalue()
